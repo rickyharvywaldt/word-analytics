@@ -12,7 +12,11 @@ export default function Stats({ wordCount, characterCount }) {
 function Stat({ label, count }) {
   return (
     <section className="stat">
-      <span className="stat__number">{count}</span>
+      <span
+        className={`stat__number ${count < 0 ? "stat__number--limit" : ""}`}
+      >
+        {count}
+      </span>
       <h2 className="second-heading">{label}</h2>
     </section>
   );
