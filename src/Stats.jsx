@@ -1,10 +1,12 @@
+import { INSTAGRAM_MAX_CHAR, META_MAX_CHAR } from "./constants";
+
 export default function Stats({ wordCount, characterCount }) {
   return (
     <section className="stats">
       <Stat label="Words" count={wordCount} />
       <Stat label="Characters" count={characterCount} />
-      <Stat label="Instagram" count={280 - characterCount} />
-      <Stat label="Meta" count={2200 - characterCount} />
+      <Stat label="Instagram" count={INSTAGRAM_MAX_CHAR - characterCount} />
+      <Stat label="Meta" count={META_MAX_CHAR - characterCount} />
     </section>
   );
 }
