@@ -1,4 +1,4 @@
-import { INSTAGRAM_MAX_CHAR, META_MAX_CHAR } from "./constants";
+import { INSTAGRAM_MAX_CHAR, META_MAX_CHAR } from "../lib/constants";
 
 export default function Stats({ wordCount, characterCount }) {
   return (
